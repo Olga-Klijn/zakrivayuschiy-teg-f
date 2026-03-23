@@ -11,8 +11,6 @@
 */
 
 /* КНОПКИ */
-
-
 .button {
   transition: box-shadow 0.3s ease;
 }
@@ -38,7 +36,6 @@
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
-
 .button__text,
 .floppy-icon {
   position: relative;
@@ -47,9 +44,17 @@
   color: var(--button-text-color);
 }
 
+.like-icon {
+  inline-size: var(--heart-icon-inline-size);
+  block-size: var(--heart-icon-block-size);
+  transform-origin: center;
+}
+
+.sparks {
+  opacity: 0;
+}
+
 /* КНОПКА С СЕРДЦЕМ */
-
-
 .card__icon-button {
   transition: border-color 0.3s ease;
 }
@@ -62,10 +67,7 @@
   border-color: var(--accent-color);
 }
 
-
 /* СЕРДЦЕ: СОСТОЯНИЕ ПО УМОЛЧАНИЮ */
-
-
 .like-icon .contour {
   transition: fill 0.1s linear;
 }
@@ -79,8 +81,6 @@
 }
 
 /* СЕРДЦЕ: HOVER */
-
-
 .like-icon:hover .core {
   fill: var(--contour-color);
   transition: fill 0.3s linear;
@@ -91,10 +91,7 @@
   transition: fill 0.3s linear 0.05s;
 }
 
-
 /* СЕРДЦЕ: ACTIVE */
-
-
 .like-icon:active .core {
   fill: var(--animation-fill-color);
   transition: fill 0.3s linear;
@@ -105,9 +102,7 @@
   transition: fill 0.3s linear 0.05s;
 }
 
-
 /* СЕРДЦЕ: LIKED */
-
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
   transition: fill 0.3s linear;
@@ -131,9 +126,6 @@
 .like-icon.is-liked .sparks {
   animation: show-sparks 0.3s ease-in 0.3s 1;
 }
-
-
-/* KEYFRAMES */
 
 
 @keyframes scale-heart {

@@ -100,10 +100,7 @@
 }
 
 /* progressive enhancement + fallback --- Safari,Chrome/text-stroke*/
-@supports (
-  (-webkit-text-stroke: 1px var(--label-stroke-color)) or
-    (text-stroke: 1px var(--label-stroke-color))
-) {
+@supports ((-webkit-text-stroke: 1px var(--label-stroke-color)) or (text-stroke: 1px var(--label-stroke-color))) {
   .card__label {
     -webkit-text-stroke: 1px var(--label-stroke-color);
     text-stroke: 1px var(--label-stroke-color);
@@ -111,10 +108,7 @@
   }
 }
 
-@supports not (
-  (-webkit-text-stroke: 1px var(--label-stroke-color)) or
-    (text-stroke: 1px var(--label-stroke-color))
-) {
+@supports not ((-webkit-text-stroke: 1px var(--label-stroke-color)) or (text-stroke: 1px var(--label-stroke-color))) {
   .card__label {
     text-shadow:
       -1px 0 var(--label-stroke-color),
@@ -171,16 +165,6 @@
   outline: none;
 }
 
-.like-icon {
-  inline-size: var(--heart-icon-inline-size);
-  block-size: var(--heart-icon-block-size);
-  transform-origin: center;
-}
-
-.sparks {
-  opacity: 0;
-}
-
 .button {
   position: relative;
   border: var(--border);
@@ -200,12 +184,10 @@
   padding: var(--like-button-padding-block) var(--like-button-padding-inline);
 }
 
-
 .save-section {
   display: flex;
   justify-content: center;
   inline-size: var(--content-width);
-  margin-block-start: -50px;
 }
 
 .save-button {
@@ -217,7 +199,6 @@
   justify-content: center;
   align-items: center;
   gap: var(--save-button-gap);
-  
 }
 
 .floppy-icon {
@@ -228,6 +209,7 @@
   inline-size: var(--floppy-size-button);
   block-size: var(--floppy-size-button);
 }
+
 /*вставьте дискету*/
 .dialog {
   inline-size: var(--dialog-inline-size);
@@ -235,7 +217,6 @@
   padding: var(--dialog-padding-block) var(--dialog-padding-inline);
   border: var(--border);
   background-color: var(--card-bg-color);
-  
 }
 
 .dialog::backdrop {
@@ -311,7 +292,7 @@
   filter: brightness(1.05) contrast(1.1) saturate(1.3);
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
   .header {
     inline-size: 100%;
     block-size: 327px;
@@ -332,7 +313,7 @@
   }
 
   .dialog {
-    inline-size: 341px;
+    max-inline-size: 341px;
     padding-block: var(--dialog-padding-block);
     padding-inline: var(--dialog-padding-inline-mobile);
   }

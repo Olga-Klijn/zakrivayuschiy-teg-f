@@ -40,7 +40,6 @@ function setButtonText(heart, button) {
   }
 }
 
-
 const saveButton = document.querySelector('.save-button');
 const dialog = document.querySelector('.dialog');
 

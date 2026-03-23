@@ -12,32 +12,31 @@
   --card-bg-color: #fff;
   --label-stroke-color: #fff;
   --button-text-color: #fff;
-   --section-gap: 100px;
-
+  --section-gap: 50px;
   --contour-color: #000;
   --animation-fill-color: #ff0000;
-   --border: 2px solid var(--accent-color);
+  --border: 2px solid var(--accent-color);
 
+  /*content 700-375*/
   --content-width: clamp(375px, 260.56px + 30.52vw, 700px);
 
   /* HEADER 700-375*/
   --header-block-size: clamp(327px, 312.56px + 3.85vw, 368px);
 
- /* </html> sign 65-49*/
+  /* </html> sign 65-49*/
   --logo-font-size: clamp(49px, 43.37px + 1.5vw, 65px);
+
   /* закрывающий тег 23-14 */
   --header-title-size: clamp(14px, 10.83px + 0.85vw, 23px);
 
-/* card */
+  /* card */
   --card-title-size: 18px;
   --card-title-line-height: 1.1;
   --card-text-size: 18px;
   --card-text-line-height: 21px;
   --card-gap: 50px;
-
   --card-content-padding: 25px;
   --card-content-gap: 25px;
-
   --card-title-padding-block: 5px;
   --card-title-padding-inline: 10px;
 
@@ -50,15 +49,13 @@
   --label-line-height: 1;
   --label-inline-end: 25px;
   --label-block-start: 25px;
-  --label-opacity: 0.5; 
-  
+  --label-opacity: 0.5;
 
-/* like button кошмар */
+  /* like button кошмар */
   --like-button-inline-size: 130px;
   --like-button-block-size: 38px;
   --like-button-padding-block: 9px;
   --like-button-padding-inline: 17px;
-
   --icon-button-inline-size: 39px;
   --icon-button-block-size: 38px;
   --heart-icon-inline-size: 39px;
@@ -71,30 +68,24 @@
   --save-button-gap: 8px;
   --floppy-size-button: 21px;
 
-/* вставьте дискету 353-341*/
-  --floppy-size-dialog: 39px;  
+  /* вставьте дискету 353-341*/
+  --floppy-size-dialog: 39px;
   --dialog-inline-size: clamp(341px, 336.78px + 1.13vw, 353px);
   --dialog-block-size: 191px;
   --dialog-gap: 30px;
   --dialog-padding-block: 30px;
   --dialog-padding-inline: 30px;
   --dialog-padding-inline-mobile: 40px;
- 
-/* page bg */
+
+  /* page bg */
   --page-gradient:
-    repeating-linear-gradient(
-      to right,
+    repeating-linear-gradient(to right,
       #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
+      transparent 2px 4px),
+    repeating-linear-gradient(to bottom,
       #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      to bottom,
+      transparent 2px 4px),
+    linear-gradient(to bottom,
       #e7e7e7 0.01%,
-      #1a1a1a 100%
-    );
+      #1a1a1a 100%);
 }
